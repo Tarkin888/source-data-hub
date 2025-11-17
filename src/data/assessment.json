@@ -1,0 +1,349 @@
+{
+  "domains": [
+    {
+      "id": "governance",
+      "name": "Governance & Board Oversight",
+      "icon": "🏛️",
+      "color": "#1e3a8a",
+      "description": "Board understanding and oversight of material controls",
+      "questions": [
+        {
+          "id": "gov-1",
+          "question": "Has your board received formal training on Provision 29 requirements?",
+          "options": [
+            {"text": "Yes, comprehensive training completed", "points": 4},
+            {"text": "Some training provided, more needed", "points": 2},
+            {"text": "Brief overview only", "points": 1},
+            {"text": "No formal training yet", "points": 0}
+          ]
+        },
+        {
+          "id": "gov-2",
+          "question": "Does your board understand what constitutes a 'material control'?",
+          "options": [
+            {"text": "Yes, clear understanding and documented criteria", "points": 4},
+            {"text": "General understanding, criteria being developed", "points": 2},
+            {"text": "Limited understanding", "points": 1},
+            {"text": "No clear understanding", "points": 0}
+          ]
+        },
+        {
+          "id": "gov-3",
+          "question": "Is there a clear board oversight structure for material controls?",
+          "options": [
+            {"text": "Yes, dedicated board/committee oversight with clear terms of reference", "points": 4},
+            {"text": "Oversight structure in place but roles need clarification", "points": 2},
+            {"text": "Informal oversight only", "points": 1},
+            {"text": "No formal oversight structure", "points": 0}
+          ]
+        },
+        {
+          "id": "gov-4",
+          "question": "Are decision-making authorities for material controls clearly defined?",
+          "options": [
+            {"text": "Yes, documented delegation of authority matrix in place", "points": 4},
+            {"text": "Authorities defined but need updating", "points": 2},
+            {"text": "Partially defined", "points": 1},
+            {"text": "Not formally defined", "points": 0}
+          ]
+        },
+        {
+          "id": "gov-5",
+          "question": "Has your external auditor been engaged on Provision 29 preparations?",
+          "options": [
+            {"text": "Yes, regular dialogue and scope agreed", "points": 4},
+            {"text": "Initial discussions held", "points": 2},
+            {"text": "Planning to engage soon", "points": 1},
+            {"text": "No engagement yet", "points": 0}
+          ]
+        },
+        {
+          "id": "gov-6",
+          "question": "How frequently does the board receive material controls reporting?",
+          "options": [
+            {"text": "Quarterly or more frequently with comprehensive reporting", "points": 4},
+            {"text": "Bi-annually with good coverage", "points": 2},
+            {"text": "Annually only", "points": 1},
+            {"text": "No regular reporting schedule", "points": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "risk",
+      "name": "Risk Management Framework",
+      "icon": "⚠️",
+      "color": "#06A77D",
+      "description": "Risk identification, assessment, and linkage to controls",
+      "questions": [
+        {
+          "id": "risk-1",
+          "question": "Are your principal risks clearly defined and board-approved?",
+          "options": [
+            {"text": "Yes, documented and regularly reviewed by the board", "points": 4},
+            {"text": "Defined but need updating", "points": 2},
+            {"text": "Partially defined", "points": 1},
+            {"text": "Not formally defined", "points": 0}
+          ]
+        },
+        {
+          "id": "risk-2",
+          "question": "Do you have formal risk appetite statements?",
+          "options": [
+            {"text": "Yes, comprehensive risk appetite framework approved by board", "points": 4},
+            {"text": "High-level statements in place", "points": 2},
+            {"text": "In development", "points": 1},
+            {"text": "No risk appetite statements", "points": 0}
+          ]
+        },
+        {
+          "id": "risk-3",
+          "question": "Are principal risks clearly linked to material controls?",
+          "options": [
+            {"text": "Yes, comprehensive risk-control matrix maintained", "points": 4},
+            {"text": "Linkages documented but incomplete", "points": 2},
+            {"text": "Some linkages identified", "points": 1},
+            {"text": "No formal linkage established", "points": 0}
+          ]
+        },
+        {
+          "id": "risk-4",
+          "question": "Do you have a formal emerging risks identification process?",
+          "options": [
+            {"text": "Yes, structured process with regular horizon scanning", "points": 4},
+            {"text": "Informal process in place", "points": 2},
+            {"text": "Ad-hoc identification only", "points": 1},
+            {"text": "No formal process", "points": 0}
+          ]
+        },
+        {
+          "id": "risk-5",
+          "question": "How complete is your risk register?",
+          "options": [
+            {"text": "Comprehensive with detailed risk descriptions, owners, and controls", "points": 4},
+            {"text": "Good coverage but needs enhancement", "points": 2},
+            {"text": "Basic register exists", "points": 1},
+            {"text": "No formal risk register", "points": 0}
+          ]
+        },
+        {
+          "id": "risk-6",
+          "question": "How effective is risk reporting to the board?",
+          "options": [
+            {"text": "Comprehensive dashboard with key risk indicators and trends", "points": 4},
+            {"text": "Regular reporting but could be enhanced", "points": 2},
+            {"text": "Basic risk reporting", "points": 1},
+            {"text": "Limited or no risk reporting", "points": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "name": "Control Environment",
+      "icon": "🛡️",
+      "color": "#F18F01",
+      "description": "Material controls identification, documentation, and operation",
+      "questions": [
+        {
+          "id": "control-1",
+          "question": "Have you identified your material controls?",
+          "options": [
+            {"text": "Yes, comprehensive inventory completed and validated", "points": 4},
+            {"text": "Initial identification done, validation in progress", "points": 2},
+            {"text": "High-level list only", "points": 1},
+            {"text": "Not yet started", "points": 0}
+          ]
+        },
+        {
+          "id": "control-2",
+          "question": "Are control owners clearly assigned for all material controls?",
+          "options": [
+            {"text": "Yes, all controls have designated owners with clear accountability", "points": 4},
+            {"text": "Most controls have owners assigned", "points": 2},
+            {"text": "Some ownership gaps exist", "points": 1},
+            {"text": "Ownership not formally assigned", "points": 0}
+          ]
+        },
+        {
+          "id": "control-3",
+          "question": "What is the quality of your control documentation?",
+          "options": [
+            {"text": "Comprehensive control descriptions with clear procedures", "points": 4},
+            {"text": "Good documentation but consistency issues", "points": 2},
+            {"text": "Basic documentation only", "points": 1},
+            {"text": "Limited or no formal documentation", "points": 0}
+          ]
+        },
+        {
+          "id": "control-4",
+          "question": "Is there a robust policy framework supporting your controls?",
+          "options": [
+            {"text": "Yes, comprehensive policy suite regularly reviewed", "points": 4},
+            {"text": "Key policies in place but need updating", "points": 2},
+            {"text": "Basic policies only", "points": 1},
+            {"text": "No formal policy framework", "points": 0}
+          ]
+        },
+        {
+          "id": "control-5",
+          "question": "If applicable, do you have a SOX 404 programme?",
+          "options": [
+            {"text": "Yes, mature SOX programme that can be leveraged", "points": 4},
+            {"text": "SOX in place but needs alignment to P29", "points": 2},
+            {"text": "Not applicable - no SOX requirement", "points": 2},
+            {"text": "No SOX programme", "points": 0}
+          ]
+        },
+        {
+          "id": "control-6",
+          "question": "How would you assess your organisation's control culture?",
+          "options": [
+            {"text": "Strong culture with clear tone from the top", "points": 4},
+            {"text": "Good culture but room for improvement", "points": 2},
+            {"text": "Developing control culture", "points": 1},
+            {"text": "Weak control culture", "points": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assurance",
+      "name": "Assurance Capability",
+      "icon": "✓",
+      "color": "#10b981",
+      "description": "Testing, monitoring, and assurance of material controls",
+      "questions": [
+        {
+          "id": "assurance-1",
+          "question": "Is the Three Lines of Defence model implemented?",
+          "options": [
+            {"text": "Yes, clearly defined with documented roles and responsibilities", "points": 4},
+            {"text": "Partially implemented, clarity needed", "points": 2},
+            {"text": "Concept understood but not formally implemented", "points": 1},
+            {"text": "Not implemented", "points": 0}
+          ]
+        },
+        {
+          "id": "assurance-2",
+          "question": "What is internal audit's coverage of material controls?",
+          "options": [
+            {"text": "Comprehensive risk-based audit plan covering all material controls", "points": 4},
+            {"text": "Good coverage but some gaps", "points": 2},
+            {"text": "Limited coverage", "points": 1},
+            {"text": "No formal internal audit function", "points": 0}
+          ]
+        },
+        {
+          "id": "assurance-3",
+          "question": "What testing methodology do you use for control effectiveness?",
+          "options": [
+            {"text": "Robust methodology with design and operating effectiveness testing", "points": 4},
+            {"text": "Basic testing approach in place", "points": 2},
+            {"text": "Ad-hoc testing only", "points": 1},
+            {"text": "No formal testing methodology", "points": 0}
+          ]
+        },
+        {
+          "id": "assurance-4",
+          "question": "How effective is your issue remediation process?",
+          "options": [
+            {"text": "Structured process with tracking and accountability", "points": 4},
+            {"text": "Process exists but needs improvement", "points": 2},
+            {"text": "Informal tracking", "points": 1},
+            {"text": "No formal remediation process", "points": 0}
+          ]
+        },
+        {
+          "id": "assurance-5",
+          "question": "How is assurance activity reported to senior management?",
+          "options": [
+            {"text": "Regular comprehensive reporting with executive oversight", "points": 4},
+            {"text": "Periodic reporting in place", "points": 2},
+            {"text": "Limited reporting", "points": 1},
+            {"text": "No structured assurance reporting", "points": 0}
+          ]
+        },
+        {
+          "id": "assurance-6",
+          "question": "Are you ready for external assurance over material controls?",
+          "options": [
+            {"text": "Yes, confidence in readiness for external review", "points": 4},
+            {"text": "Largely ready, some work needed", "points": 2},
+            {"text": "Significant preparation required", "points": 1},
+            {"text": "Not ready for external assurance", "points": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology & Data",
+      "icon": "💻",
+      "color": "#8b5cf6",
+      "description": "Systems, automation, and data quality for control management",
+      "questions": [
+        {
+          "id": "tech-1",
+          "question": "Do you have a GRC system for control management?",
+          "options": [
+            {"text": "Yes, integrated GRC platform fully implemented", "points": 4},
+            {"text": "GRC system in place but needs optimization", "points": 2},
+            {"text": "Evaluating GRC solutions", "points": 1},
+            {"text": "Using spreadsheets only", "points": 0}
+          ]
+        },
+        {
+          "id": "tech-2",
+          "question": "What level of automation exists for control monitoring?",
+          "options": [
+            {"text": "Significant automation with real-time monitoring", "points": 4},
+            {"text": "Some automated controls in place", "points": 2},
+            {"text": "Minimal automation", "points": 1},
+            {"text": "Fully manual processes", "points": 0}
+          ]
+        },
+        {
+          "id": "tech-3",
+          "question": "How would you rate data quality for control reporting?",
+          "options": [
+            {"text": "High quality with validated data sources", "points": 4},
+            {"text": "Good but some data quality issues", "points": 2},
+            {"text": "Significant data quality concerns", "points": 1},
+            {"text": "Poor data quality", "points": 0}
+          ]
+        },
+        {
+          "id": "tech-4",
+          "question": "Do you have dashboard capability for control status?",
+          "options": [
+            {"text": "Yes, real-time dashboards with drill-down capability", "points": 4},
+            {"text": "Basic dashboards available", "points": 2},
+            {"text": "Manual reporting only", "points": 1},
+            {"text": "No dashboard capability", "points": 0}
+          ]
+        },
+        {
+          "id": "tech-5",
+          "question": "Is there an integrated issue tracking system?",
+          "options": [
+            {"text": "Yes, comprehensive system with workflow and reporting", "points": 4},
+            {"text": "Basic tracking system in place", "points": 2},
+            {"text": "Spreadsheet-based tracking", "points": 1},
+            {"text": "No formal tracking system", "points": 0}
+          ]
+        },
+        {
+          "id": "tech-6",
+          "question": "What board reporting and portal tools are available?",
+          "options": [
+            {"text": "Secure board portal with interactive reporting", "points": 4},
+            {"text": "Basic digital reporting to board", "points": 2},
+            {"text": "Paper-based reporting", "points": 1},
+            {"text": "No dedicated board reporting tools", "points": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}

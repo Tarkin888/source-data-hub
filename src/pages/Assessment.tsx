@@ -1,11 +1,17 @@
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { AssessmentProvider } from '@/contexts/AssessmentContext';
+import AssessmentIntro from '@/components/assessment/AssessmentIntro';
+import AssessmentQuestions from '@/components/assessment/AssessmentQuestions';
+
 const Assessment = () => {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-6">Readiness Assessment</h1>
-      <p className="text-lg text-muted-foreground">
-        Evaluate your organization's readiness for Provision 29 compliance.
-      </p>
-    </div>
+    <AssessmentProvider>
+      <Routes>
+        <Route path="/" element={<AssessmentIntro />} />
+        <Route path="/questions" element={<AssessmentQuestions />} />
+        <Route path="*" element={<Navigate to="/assessment" replace />} />
+      </Routes>
+    </AssessmentProvider>
   );
 };
 
