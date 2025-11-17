@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { NavLink } from '@/components/NavLink';
+import ProgressWidget from '@/components/progress/ProgressWidget';
 import { 
   ArrowRight, 
   ClipboardCheck, 
@@ -155,28 +156,61 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
-          {navigationTiles.map((tile, index) => (
-            <NavLink
-              key={tile.title}
-              to={tile.link}
-              className={`group relative p-6 bg-card border rounded-lg border-l-4 ${getColorClasses(tile.color)} hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in min-h-[180px]`}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="flex flex-col h-full">
-                <div className="text-3xl sm:text-4xl mb-3 md:mb-4">{tile.icon}</div>
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
-                  {tile.title}
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4 flex-1">
-                  {tile.description}
-                </p>
-                <div className="flex justify-end">
-                  <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-4 md:mb-6">
+            {/* Progress Widget - Span 2 columns on larger screens */}
+            <div className="sm:col-span-2 lg:col-span-1">
+              <ProgressWidget />
+            </div>
+
+            {/* First 2 navigation tiles */}
+            {navigationTiles.slice(0, 2).map((tile, index) => (
+              <NavLink
+                key={tile.title}
+                to={tile.link}
+                className={`group relative p-6 bg-card border rounded-lg border-l-4 ${getColorClasses(tile.color)} hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in min-h-[180px]`}
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex flex-col h-full">
+                  <div className="text-3xl sm:text-4xl mb-3 md:mb-4">{tile.icon}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                    {tile.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">
+                    {tile.description}
+                  </p>
+                  <div className="flex justify-end">
+                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                  </div>
                 </div>
-              </div>
-            </NavLink>
-          ))}
+              </NavLink>
+            ))}
+          </div>
+
+          {/* Remaining navigation tiles */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {navigationTiles.slice(2).map((tile, index) => (
+              <NavLink
+                key={tile.title}
+                to={tile.link}
+                className={`group relative p-6 bg-card border rounded-lg border-l-4 ${getColorClasses(tile.color)} hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in min-h-[180px]`}
+                style={{ animationDelay: `${(index + 2) * 100}ms` }}
+              >
+                <div className="flex flex-col h-full">
+                  <div className="text-3xl sm:text-4xl mb-3 md:mb-4">{tile.icon}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                    {tile.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">
+                    {tile.description}
+                  </p>
+                  <div className="flex justify-end">
+                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                  </div>
+                </div>
+              </NavLink>
+            ))}
+          </div>
         </div>
       </section>
 

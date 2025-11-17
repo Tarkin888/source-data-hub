@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useAssessment } from '@/contexts/AssessmentContext';
+import { useProgress } from '@/contexts/ProgressContext';
 import ScoreGauge from '@/components/assessment/ScoreGauge';
 import RadarChart from '@/components/assessment/RadarChart';
 import DomainScoreCard from '@/components/assessment/DomainScoreCard';
@@ -17,6 +18,7 @@ import VendorFooter from '@/components/vendor/VendorFooter';
 const AssessmentResults = () => {
   const navigate = useNavigate();
   const { answers, getTotalScore, getDomainScore, isComplete, resetAssessment } = useAssessment();
+  const { trackAssessmentCompletion } = useProgress();
 
   useEffect(() => {
     if (!isComplete()) {
@@ -26,6 +28,20 @@ const AssessmentResults = () => {
 
   const totalScore = getTotalScore();
   const maxTotalScore = 120;
+
+  // Track assessment completion on first render
+  useEffect(() => {
+    if (isComplete()) {
+      const domainScoresObj = assessmentData.domains.reduce((acc, domain) => {
+        const questionIds = domain.questions.map((q) => q.id);
+        const score = getDomainScore(domain.id, questionIds);
+        acc[domain.id] = score;
+        return acc;
+      }, {} as { [domain: string]: number });
+      
+      trackAssessmentCompletion(totalScore, domainScoresObj);
+    }
+  }, []);
 
   // Calculate domain scores
   const domainScores = assessmentData.domains.map((domain) => {
