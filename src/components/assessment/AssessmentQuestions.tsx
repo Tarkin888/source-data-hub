@@ -5,6 +5,7 @@ import { useAssessment } from '@/contexts/AssessmentContext';
 import QuestionCard from './QuestionCard';
 import ProgressBar from './ProgressBar';
 import DomainTransition from './DomainTransition';
+import SEOHead from '@/components/common/SEOHead';
 import assessmentData from '@/data/assessment.json';
 import { ArrowRight } from 'lucide-react';
 
@@ -87,6 +88,11 @@ const AssessmentQuestions = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={`Assessment Question ${currentQuestionIndex + 1} of 30`}
+        description={`P29 readiness assessment - ${currentQuestion.domainName}: ${currentQuestion.question}`}
+        noindex={true}
+      />
       <ProgressBar
         currentQuestion={currentQuestionIndex}
         totalQuestions={allQuestions.length}
