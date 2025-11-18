@@ -37,6 +37,17 @@ const TemplateDetailModal = ({
 }: TemplateDetailModalProps) => {
   if (!template) return null;
 
+  const handleDownload = () => {
+    if (template.downloadUrl) {
+      const link = document.createElement('a');
+      link.href = template.downloadUrl;
+      link.download = template.downloadUrl.split('/').pop() || template.name;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   const handleRequestTemplate = () => {
     const subject = encodeURIComponent(`P29 Template Request: ${template.name}`);
     const body = encodeURIComponent(
@@ -106,9 +117,19 @@ const TemplateDetailModal = ({
 
           {/* Action Buttons */}
           <div className="border-t pt-6 space-y-3">
+            {template.downloadUrl && (
+              <Button
+                onClick={handleDownload}
+                size="lg"
+                className="w-full gap-2"
+              >
+                Download Template
+              </Button>
+            )}
             <Button
               onClick={handleRequestTemplate}
               size="lg"
+              variant={template.downloadUrl ? "outline" : "default"}
               className="w-full gap-2"
             >
               Request This Template
