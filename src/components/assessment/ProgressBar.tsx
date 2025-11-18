@@ -45,7 +45,7 @@ const ProgressBar = ({
           </div>
           <div className="w-20"></div>
         </div>
-        <Progress value={percentage} className="h-2" />
+        <Progress value={percentage} className="h-3" />
       </div>
     </div>
   );
