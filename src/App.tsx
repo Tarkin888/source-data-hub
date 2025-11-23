@@ -9,6 +9,7 @@ import { VendorProvider } from "./contexts/VendorContext";
 import { SearchProvider } from "./contexts/SearchContext";
 import { ProgressProvider } from "./contexts/ProgressContext";
 import { FiscalYearProvider } from "./contexts/FiscalYearContext";
+import { MaturityProvider } from "./contexts/MaturityContext";
 import ErrorBoundary from "./components/common/ErrorBoundary";
 import GlobalSearch from "./components/search/GlobalSearch";
 import Home from "./pages/Home";
@@ -30,10 +31,11 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <VendorProvider>
         <FiscalYearProvider>
-          <ProgressProvider>
-            <AssessmentProvider>
-              <SearchProvider>
-                <TooltipProvider>
+          <MaturityProvider>
+            <ProgressProvider>
+              <AssessmentProvider>
+                <SearchProvider>
+                  <TooltipProvider>
                 <Toaster />
                 <Sonner />
                 <BrowserRouter>
@@ -55,10 +57,11 @@ const App = () => (
                   </Layout>
                   <GlobalSearch />
                 </BrowserRouter>
-                </TooltipProvider>
-              </SearchProvider>
-            </AssessmentProvider>
-          </ProgressProvider>
+                  </TooltipProvider>
+                </SearchProvider>
+              </AssessmentProvider>
+            </ProgressProvider>
+          </MaturityProvider>
         </FiscalYearProvider>
       </VendorProvider>
     </QueryClientProvider>

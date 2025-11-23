@@ -89,6 +89,30 @@
       "category": "Best Practice",
       "question": "Should I conduct a dry run before the 2026 reporting year?",
       "answer": "YES—a dry run in H2 2025 is non-negotiable and a critical success factor.\n\nWhy?\n1. Stress-Test: Identify control execution issues, evidence gaps, and testing bottlenecks before it matters\n2. Board Confidence: Board needs to see the process work before committing to declaration\n3. Lessons Learned: Time to remediate issues found during dry run before FY2026 starts\n4. Platform Validation: Confirms GRC platform is operational and fit-for-purpose\n\nDry Run Scope:\n• Duration: 6-8 weeks (typically Q4 2025)\n• Covers: All material controls executed per frequency, evidence collected, sample testing conducted, board dashboard generated\n• Output: Dry run report with RAG status, lessons learned, improvement actions\n\nReal Example:\nA FTSE 250 company conducted a dry run in Q4 2025 and discovered:\n• 15% of controls had unclear effectiveness criteria → remediated before FY2026\n• Evidence repository structure was confusing → reorganised\n• Board dashboard had too much detail → simplified to 'Approach on a Page'\n• 2 controls found ineffective → remediation plan implemented in Q1 2026\n\nResult: Entered FY2026 with confidence; board approved declaration without hesitation\n\nCompanies that skip the dry run typically face:\n• Scrambled evidence collection in Q4 2026\n• Board hesitation to declare\n• Last-minute control failures\n• Rushed remediation\n\nDry Run Cost: £20,000-£50,000 (worth every penny for the risk mitigation)"
+    },
+    {
+      "id": "faq16",
+      "category": "Maturity & Starting Points",
+      "question": "We already have SOX compliance. Can we skip Phase 1?",
+      "answer": "Yes, you can likely skip most of Phase 1, but you MUST validate your SOX framework meets P29 requirements first.\n\nWhat Transfers from SOX:\n• Financial reporting controls (60-80% of your P29 MCI)\n• Control documentation standards\n• Testing protocols and evidence collection\n• GRC platform infrastructure\n• Board reporting mechanisms\n\nWhat You Still Need:\n• Expand beyond financial controls to operational, ESG, and reporting controls\n• Link all controls to principal risks (not just financial statement risks)\n• Apply P29 materiality criteria (qualitative + quantitative)\n• Validate board vs. Audit Committee accountability\n\nRecommended Approach:\n1. Complete the Maturity Assessment in the Roadmap section\n2. Use the Phase 1 Skip Validation checklist\n3. Review SOX → P29 Bridging Guide\n4. Start at Phase 2 with validation of existing SOX controls\n\nTimeline Savings: 10-16 weeks by skipping Phase 1"
+    },
+    {
+      "id": "faq17",
+      "category": "Maturity & Starting Points",
+      "question": "We're starting in Q3 2025. Is it too late?",
+      "answer": "It's not too late, but you're significantly behind schedule and need an accelerated approach.\n\nYour Situation:\n• Ideal start: Q1 2025 (you're 6 months behind)\n• Time remaining: ~18 months to first compliance period\n• Risk Level: HIGH - compressed timeline with limited buffer\n\nAccelerated Approach:\n1. Complete Maturity Assessment to determine starting phase\n2. If Level 1 (starting fresh): Use 18-month Accelerated Track\n3. If Level 2-3: Use 12-month Compressed Track\n4. Engage external consultants to compress Phases 1-2\n5. Accept higher costs (£600K-1M+) for acceleration\n6. Plan for potential qualified declaration in first year\n\nWhat You Can Still Achieve:\n• Emergency board approval in Week 1\n• Rapid control identification (4-6 weeks vs 12 weeks)\n• Compressed Phase 2 (12 weeks vs 16 weeks)\n• Minimal dry run (4 weeks vs 8 weeks)\n• Full FY2026 evidence collection (cannot be shortened)\n\nCritical Actions THIS WEEK:\n• Secure CEO/CFO emergency sponsorship\n• Approve accelerated budget (£600K-1.5M)\n• Engage external support immediately\n• Fast-track GRC platform selection\n\nBottom Line: Challenging but achievable with significant resources and commitment."
+    },
+    {
+      "id": "faq18",
+      "category": "Maturity & Starting Points",
+      "question": "We have a GRC platform but it's not P29-ready. Where do we start?",
+      "answer": "You have a significant advantage—leverage your existing platform rather than buying new. Start at Phase 2 or Phase 3 depending on control maturity.\n\nYour Advantage:\n• Platform infrastructure exists (no procurement delay)\n• Users already trained on the tool\n• Integration with other systems likely complete\n• Historical data may be usable\n\nGap: Platform Configuration\n• Not configured for P29 control library\n• Missing P29-specific workflows\n• Board dashboard not built for P29 declaration\n• Testing protocols may need adaptation\n\nRecommended Approach:\n1. Complete Maturity Assessment (likely Level 2 or 3)\n2. Conduct gap analysis: Current platform config vs P29 requirements\n3. Work with platform vendor on P29 configuration:\n   - Expand control library to include non-SOX controls\n   - Add P29 workflow (evidence collection, board reporting)\n   - Build 'Approach on a Page' dashboard\n   - Configure testing protocols for operating effectiveness\n4. Estimated configuration effort: 8-12 weeks\n5. Budget: £50K-150K (much less than new platform)\n\nWhere to Start:\n• If controls documented: Start Phase 3 (Assurance Preparation)\n• If controls need work: Start Phase 2 (Design & Documentation)\n\nTimeline: 12-18 months depending on control maturity"
+    },
+    {
+      "id": "faq19",
+      "category": "Maturity & Starting Points",
+      "question": "We've documented 80 controls already. Can we use them for P29?",
+      "answer": "Maybe—it depends on HOW those controls were identified and whether they meet P29 materiality standards.\n\nKey Questions:\n1. Were controls identified top-down from principal risks? (Required for P29)\n2. Do they cover operational, ESG, and reporting controls? (Not just financial)\n3. Were materiality criteria applied? (80 controls suggests possible over-scoping)\n4. Are controls linked to board-approved principal risks?\n5. Do you have named control owners (individuals, not departments)?\n\nIf YES to all → You're likely Level 3 maturity, start at Phase 3\nIf PARTIAL → You're Level 2 maturity, start at Phase 2 with validation\nIf NO → Start at Phase 1 - your existing controls may not be P29-appropriate\n\nCommon Pitfalls with Existing Controls:\n• Bottom-up identification (process mapping) vs top-down (risk-based)\n• Over-scoping: >100 controls indicates insufficient materiality filtering\n• Financial-only focus: Missing operational and ESG domains\n• Department ownership vs named individuals\n\nValidation Checklist:\n1. Map your 80 controls to principal risks - any gaps?\n2. Apply P29 materiality criteria - can you reduce to 40-60?\n3. Check control documentation quality (Phase 2 validation checklist)\n4. Verify ownership acceptance\n\nRecommended: Complete the Gap Analysis Tool and use Phase 2 Skip Validation checklist before proceeding."
     }
   ],
   "categories": [
@@ -99,6 +123,7 @@
     "Governance",
     "Disclosure",
     "Compliance",
-    "Best Practice"
+    "Best Practice",
+    "Maturity & Starting Points"
   ]
 }
