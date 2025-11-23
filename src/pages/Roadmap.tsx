@@ -22,6 +22,11 @@ import acceleratedPhasesData from "@/data/acceleratedPhases.json";
 import FiscalYearSelector from "@/components/roadmap/FiscalYearSelector";
 import FiscalYearCalculator from "@/components/roadmap/FiscalYearCalculator";
 import FiscalYearDisclaimer from "@/components/roadmap/FiscalYearDisclaimer";
+import MaturityAssessment from "@/components/roadmap/MaturityAssessment";
+import AcceleratedTracks from "@/components/roadmap/AcceleratedTracks";
+import GapAnalysisTool from "@/components/roadmap/GapAnalysisTool";
+import FrameworkBridgingGuides from "@/components/roadmap/FrameworkBridgingGuides";
+import PhaseSkipValidation from "@/components/roadmap/PhaseSkipValidation";
 import { useFiscalYear } from "@/contexts/FiscalYearContext";
 
 const Roadmap = () => {
@@ -148,6 +153,51 @@ const Roadmap = () => {
       <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           <FiscalYearCalculator />
+        </div>
+      </section>
+
+      {/* Maturity Assessment */}
+      <section className="py-8 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <MaturityAssessment />
+        </div>
+      </section>
+
+      {/* Accelerated Tracks */}
+      <section className="py-8 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <AcceleratedTracks />
+        </div>
+      </section>
+
+      {/* Phase Skip Validation */}
+      <section className="py-8 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl space-y-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3">Phase Skip Validation</h2>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
+              Already completed some phases? Use these checklists to validate you can skip ahead
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <PhaseSkipValidation phaseNumber={1} />
+            <PhaseSkipValidation phaseNumber={2} />
+            <PhaseSkipValidation phaseNumber={3} />
+          </div>
+        </div>
+      </section>
+
+      {/* Gap Analysis Tool */}
+      <section className="py-8 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <GapAnalysisTool />
+        </div>
+      </section>
+
+      {/* Framework Bridging Guides */}
+      <section className="py-8 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <FrameworkBridgingGuides />
         </div>
       </section>
 
