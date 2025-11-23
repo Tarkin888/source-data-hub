@@ -138,7 +138,7 @@ const Home = () => {
                 What is Provision 29?
               </h2>
               <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
-                Provision 29 of the UK Corporate Governance Code requires FTSE 350 boards to declare annually that they have established procedures to identify and manage material controls. The first declarations are due in 2026 Annual Reports.
+                Provision 29 of the UK Corporate Governance Code requires FTSE 350 boards to declare annually that they have established procedures to identify and manage material controls. The first declarations are due in annual reports covering fiscal years starting on or after 1 January 2026.
               </p>
               <NavLink 
                 to="/faq" 
@@ -150,6 +150,77 @@ const Home = () => {
             </div>
           </div>
         </Card>
+      </section>
+
+      {/* Quick Start Guide - Step 0 */}
+      <section className="container mx-auto px-4 py-12 md:py-16 bg-muted/30">
+        <div className="max-w-4xl mx-auto">
+          <Card className="p-6 md:p-8 bg-primary/5">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-3">
+                Quick Start: Identify Your Scenario
+              </h2>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                Before diving in, take 60 seconds to identify your starting point
+              </p>
+            </div>
+            <div className="space-y-4 max-w-2xl mx-auto">
+              <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                <span className="text-2xl">📅</span>
+                <div className="flex-1">
+                  <h3 className="font-semibold mb-1">My fiscal year-end is:</h3>
+                  <p className="text-sm text-muted-foreground">
+                    December / March / June / September
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1 italic">
+                    This determines your compliance timeline and evidence collection period
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                <span className="text-2xl">🚀</span>
+                <div className="flex-1">
+                  <h3 className="font-semibold mb-1">I am starting implementation on:</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Today&apos;s date determines your available timeline and recommended track
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1 italic">
+                    Earlier starts (Q1 2025) = 24-month track | Mid-2025 = 18-month track | Late 2025 = 12-month accelerated
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                <span className="text-2xl">📊</span>
+                <div className="flex-1">
+                  <h3 className="font-semibold mb-1">My readiness level is:</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Take the 8-question maturity assessment to identify your starting phase
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1 italic">
+                    Level 1 (Starting Fresh) / Level 2 (Foundation Established) / Level 3 (Controls Documented) / Level 4 (Testing Ready)
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-primary/10 rounded-lg border border-primary/20">
+                <span className="text-2xl">🎯</span>
+                <div className="flex-1">
+                  <h3 className="font-semibold mb-1 text-primary">My personalised playbook starts at:</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Visit the Roadmap section to complete your assessment and generate your customised timeline
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6 text-center">
+              <Button asChild size="lg" className="min-h-[48px]">
+                <NavLink to="/roadmap" className="flex items-center gap-2">
+                  <Map className="w-5 h-5" />
+                  Generate My Timeline
+                </NavLink>
+              </Button>
+            </div>
+          </Card>
+        </div>
       </section>
 
       {/* Quick Navigation Tiles */}

@@ -187,13 +187,14 @@
       "type": "Project Plan",
       "format": "Excel",
       "roles": ["Programme Manager", "CRO"],
-      "description": "6-8 week project plan for H2 2025 dress rehearsal. Includes testing schedule, evidence collection, board reporting simulation.",
+      "description": "6-8 week project plan for dress rehearsal prior to compliance FY. Includes testing schedule, evidence collection, board reporting simulation. [Adapt timing: For December year-end, run in Q3 2025; for March year-end, run in Q4 2025; for June/September year-ends, run in Q1 2026]",
       "keyFeatures": [
         "Week-by-week activity schedule",
         "Control testing assignments",
-        "Evidence collection milestones",
+        "Evidence collection milestones ([Fiscal Q1-Q4] adaptable)",
         "Board dashboard generation",
-        "Lessons learned capture process"
+        "Lessons learned capture process",
+        "Timeline adapts to your fiscal year-end"
       ],
       "downloadUrl": "/templates/dry-run-project-plan.xlsx",
       "previewUrl": "/previews/dry-run-preview.png"
@@ -205,13 +206,14 @@
       "type": "Documentation",
       "format": "PDF Guide",
       "roles": ["Control Owner", "Internal Audit"],
-      "description": "How to organise control testing evidence for audit readiness. Folder structure, naming conventions, retention requirements.",
+      "description": "How to organise control testing evidence for audit readiness throughout your compliance fiscal year. Folder structure, naming conventions, retention requirements. [Your Scenario: Organise by [Fiscal Q1], [Fiscal Q2], [Fiscal Q3], [Fiscal Q4] based on your fiscal year-end]",
       "keyFeatures": [
-        "Folder structure by control ID and period",
-        "File naming conventions",
+        "Folder structure by control ID and fiscal period",
+        "File naming conventions ([FY Start +X months] format)",
         "Evidence types by control category",
-        "Retention requirements (typically 7 years)",
-        "Access controls and audit trail"
+        "Retention requirements (typically 7 years from [Year-end date])",
+        "Access controls and audit trail",
+        "Examples for different fiscal year-ends"
       ],
       "downloadUrl": "/templates/evidence-repository-guide.pdf",
       "previewUrl": "/previews/evidence-repository-preview.png"
@@ -223,13 +225,14 @@
       "type": "Board Paper",
       "format": "Word",
       "roles": ["Board", "CFO"],
-      "description": "Draft wording for annual report declaration of effectiveness. Includes variations: full effectiveness, effectiveness with exceptions, ineffectiveness with remediation.",
+      "description": "Draft wording for annual report declaration of effectiveness covering your compliance fiscal year. Includes variations: full effectiveness, effectiveness with exceptions, ineffectiveness with remediation. [Example: For March year-end, declaration covers April 2026-March 2027 FY, published by July 2027]",
       "keyFeatures": [
         "Paragraph 1: Monitoring and review process description",
-        "Paragraph 2: Explicit effectiveness declaration",
+        "Paragraph 2: Explicit effectiveness declaration for [Compliance Fiscal Year]",
         "Paragraph 3: Ineffective controls and remediation (if applicable)",
         "Paragraph 4: Prior year comparison",
-        "FRC-compliant language"
+        "FRC-compliant language",
+        "Timeline examples for different fiscal year-ends"
       ],
       "downloadUrl": "/templates/board-declaration-template.docx",
       "previewUrl": "/previews/board-declaration-preview.png"
