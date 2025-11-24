@@ -22,6 +22,10 @@ import FAQ from "./pages/FAQ";
 import Glossary from "./pages/Glossary";
 import Assessment from "./pages/Assessment";
 import Progress from "./pages/Progress";
+import GettingStarted from "./pages/GettingStarted";
+import Features from "./pages/Features";
+import Finalisation from "./pages/Finalisation";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +46,10 @@ const App = () => (
                   <Layout>
                     <Routes>
                       <Route path="/" element={<Home />} />
+                      <Route path="/getting-started" element={<GettingStarted />} />
+                      <Route path="/features" element={<Features />} />
+                      <Route path="/finalisation" element={<Finalisation />} />
+                      <Route path="/contact" element={<Contact />} />
                       <Route path="/roadmap" element={<Roadmap />} />
                       <Route path="/templates" element={<Templates />} />
                       <Route path="/roles" element={<Roles />} />
