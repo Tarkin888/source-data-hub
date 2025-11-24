@@ -83,7 +83,7 @@ const RoleTimeline = ({ role }: RoleTimelineProps) => {
       </Alert>
 
       <div className="space-y-4">
-        {role.timeline.map((item, idx) => (
+        {(role.timeline || []).map((item, idx) => (
           <Card key={idx} className="overflow-hidden">
             <div 
               className="h-1"

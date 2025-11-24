@@ -57,7 +57,7 @@ const RoleOverview = ({ role }: RoleOverviewProps) => {
           <div>
             <h4 className="font-semibold mb-2">Your First Week:</h4>
             <ol className="list-decimal list-inside space-y-2 text-sm">
-              {role.keyResponsibilities.slice(0, 3).map((resp, idx) => (
+              {(role.keyResponsibilities || []).slice(0, 3).map((resp, idx) => (
                 <li key={idx}>{transformFiscalYearText(resp)}</li>
               ))}
             </ol>
@@ -65,7 +65,7 @@ const RoleOverview = ({ role }: RoleOverviewProps) => {
           <div>
             <h4 className="font-semibold mb-2">Key Templates You'll Need:</h4>
             <div className="flex flex-wrap gap-2">
-              {role.recommendedTemplates.slice(0, 3).map((template, idx) => (
+              {(role.recommendedTemplates || []).slice(0, 3).map((template, idx) => (
                 <Badge key={idx} variant="secondary">
                   {template.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
                 </Badge>
@@ -82,7 +82,7 @@ const RoleOverview = ({ role }: RoleOverviewProps) => {
           Key Responsibilities
         </h3>
         <div className="grid gap-3">
-          {role.keyResponsibilities.map((responsibility, idx) => (
+          {(role.keyResponsibilities || []).map((responsibility, idx) => (
             <div 
               key={idx} 
               className="flex items-start gap-3 p-4 bg-accent/50 rounded-lg"
@@ -105,7 +105,7 @@ const RoleOverview = ({ role }: RoleOverviewProps) => {
           {role.criticalQuestions ? "Critical Questions" : "Critical Decisions"}
         </h3>
         <div className="grid gap-3">
-          {role.criticalQuestions?.map((question, idx) => (
+          {(role.criticalQuestions || []).map((question, idx) => (
             <div 
               key={idx} 
               className="p-4 border rounded-lg hover:bg-accent/50 transition-colors"
@@ -128,7 +128,7 @@ const RoleOverview = ({ role }: RoleOverviewProps) => {
           How to Measure Your Effectiveness
         </h3>
         <div className="space-y-3">
-          {role.successMetrics.map((metric, idx) => (
+          {(role.successMetrics || []).map((metric, idx) => (
             <div key={idx} className="flex items-start gap-3">
               <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: role.color }} />
               <p className="text-sm">{transformFiscalYearText(metric)}</p>

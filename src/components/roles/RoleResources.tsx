@@ -67,7 +67,7 @@ const RoleResources = ({ role, templates }: RoleResourcesProps) => {
       <div>
         <h3 className="text-2xl font-bold mb-4">Build Your Knowledge</h3>
         <div className="space-y-3">
-          {role.trainingResources.map((resource, idx) => (
+          {(role.trainingResources || []).map((resource, idx) => (
             <Card key={idx} className="hover:bg-accent/50 transition-colors cursor-pointer">
               <CardContent className="p-4">
                 <div className="flex items-start gap-4">
