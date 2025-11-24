@@ -89,7 +89,7 @@ const RoleDetail = () => {
                 📋
               </div>
               <div>
-                <div className="font-bold">{role.keyResponsibilities.length}</div>
+                <div className="font-bold">{role.keyResponsibilities?.length || 0}</div>
                 <div className="text-muted-foreground">Key Responsibilities</div>
               </div>
             </div>
@@ -101,7 +101,7 @@ const RoleDetail = () => {
                 ❓
               </div>
               <div>
-                <div className="font-bold">{role.criticalQuestions.length}</div>
+                <div className="font-bold">{role.criticalQuestions?.length || 0}</div>
                 <div className="text-muted-foreground">Critical Questions</div>
               </div>
             </div>
