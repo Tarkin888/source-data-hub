@@ -5,7 +5,6 @@ import HeroSectionVariantC from '@/components/landing/HeroSectionVariantC';
 import JourneySelector from '@/components/landing/JourneySelector';
 import JourneySelectorVariantB from '@/components/landing/JourneySelectorVariantB';
 import JourneySelectorVariantC from '@/components/landing/JourneySelectorVariantC';
-import TimelineAlert from '@/components/landing/TimelineAlert';
 import CookieConsent from '@/components/analytics/CookieConsent';
 import { useEffect, useMemo, lazy, Suspense } from 'react';
 import { trackScrollDepth } from '@/utils/analytics';
@@ -143,13 +142,6 @@ export default function Home() {
         >
           Skip to main content
         </a>
-
-        {/* Sticky deadline alert */}
-        <TimelineAlert 
-          sticky={true}
-          showDismiss={true}
-          deadline="2026-01-01"
-        />
 
         {/* Main content sections */}
         <div id="main-content">
