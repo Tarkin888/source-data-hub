@@ -1,8 +1,18 @@
 import { Calendar, FileText, Users, ClipboardCheck, BookOpen, Target } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { trackFeatureInterest, trackCTAClick } from '@/utils/analytics';
 
 export default function FeaturesGrid() {
   const navigate = useNavigate();
+
+  const handleFeatureHover = (featureName: string) => {
+    trackFeatureInterest(featureName);
+  };
+
+  const handleViewFeatures = () => {
+    trackCTAClick('View Detailed Features', 'features_grid');
+    navigate('/features');
+  };
 
   const features = [
     {
@@ -75,6 +85,7 @@ export default function FeaturesGrid() {
             return (
               <div
                 key={feature.title}
+                onMouseEnter={() => handleFeatureHover(feature.title)}
                 className="relative bg-gray-50 p-6 sm:p-8 rounded-lg border border-gray-200 hover:bg-white hover:shadow-md active:scale-[0.98] sm:hover:-translate-y-0.5 transition-all duration-200"
               >
                 {/* Badge - Repositioned for mobile */}
@@ -111,7 +122,7 @@ export default function FeaturesGrid() {
             Ready to explore all features?
           </p>
           <button
-            onClick={() => navigate('/features')}
+            onClick={handleViewFeatures}
             className="w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium min-h-[48px]"
           >
             View Detailed Features

@@ -1,8 +1,15 @@
 import { Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { trackPageView, trackCTAClick } from '@/utils/analytics';
 
 export default function HeroSection() {
   const navigate = useNavigate();
+  
+  // Track page view on mount
+  useEffect(() => {
+    trackPageView('landing_hero');
+  }, []);
   
   // Calculate months remaining until January 2026
   const today = new Date();
@@ -17,6 +24,11 @@ export default function HeroSection() {
     '15+ Templates',
     'Role-Based Guidance'
   ];
+
+  const handleCTAClick = (ctaName: string, route: string) => {
+    trackCTAClick(ctaName, 'hero');
+    navigate(route);
+  };
 
   return (
     <section className="relative min-h-[100vh] sm:min-h-[80vh] flex items-center justify-center bg-gradient-to-b from-blue-900 to-blue-950 px-4 py-12 sm:py-16 safe-area-inset">
@@ -44,13 +56,13 @@ export default function HeroSection() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mt-8 sm:mt-12 max-w-md sm:max-w-none mx-auto">
           <button
-            onClick={() => navigate('/getting-started')}
+            onClick={() => handleCTAClick('Start Implementation', '/getting-started')}
             className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 rounded-lg bg-white text-blue-900 hover:bg-blue-50 transition-colors font-semibold min-h-[48px]"
           >
             Start Implementation
           </button>
           <button
-            onClick={() => navigate('/assessment')}
+            onClick={() => handleCTAClick('Take Assessment', '/assessment')}
             className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-4 rounded-lg border-2 border-white text-white hover:bg-white/10 transition-colors font-semibold min-h-[48px]"
           >
             Take Assessment

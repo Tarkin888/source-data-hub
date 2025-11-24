@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { AlertCircle, AlertTriangle, X } from 'lucide-react';
+import { trackAlertDismissal } from '@/utils/analytics';
 
 interface TimelineAlertProps {
   deadline?: string;
@@ -72,6 +73,7 @@ export default function TimelineAlert({
   };
 
   const handleDismiss = () => {
+    trackAlertDismissal();
     localStorage.setItem('p29_alert_dismissed', 'true');
     setDismissed(true);
   };

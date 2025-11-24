@@ -1,8 +1,14 @@
 import { Quote, Star, ArrowRight, Zap, CheckCircle, Shield, RefreshCw } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { trackCTAClick } from '@/utils/analytics';
 
 export default function SocialProofCTA() {
   const navigate = useNavigate();
+
+  const handleCTAClick = (ctaName: string, route: string) => {
+    trackCTAClick(ctaName, 'social_proof_cta');
+    navigate(route);
+  };
 
   const trustIndicators = [
     {
@@ -72,14 +78,14 @@ export default function SocialProofCTA() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 max-w-md sm:max-w-none mx-auto">
             <button
-              onClick={() => navigate('/getting-started')}
+              onClick={() => handleCTAClick('Get Started Now', '/getting-started')}
               className="w-full sm:w-auto bg-white text-blue-900 px-6 sm:px-8 py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center gap-2 min-h-[48px]"
             >
               Get Started Now
               <ArrowRight size={18} className="sm:w-5 sm:h-5" />
             </button>
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => handleCTAClick('Schedule a Demo', '/contact')}
               className="w-full sm:w-auto border-2 border-white text-white px-6 sm:px-8 py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-white/10 transition-colors min-h-[48px]"
             >
               Schedule a Demo
