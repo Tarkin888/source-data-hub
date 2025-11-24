@@ -180,12 +180,18 @@ const Home = () => {
               <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
                 <span className="text-2xl">🚀</span>
                 <div className="flex-1">
-                  <h3 className="font-semibold mb-1">I am starting implementation on:</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Today&apos;s date determines your available timeline and recommended track
+                  <h3 className="font-semibold mb-1">Starting Your P29 Journey in November 2025</h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Organizations beginning P29 implementation now face a severely compressed timeline with only 14 months until the January 2026 effective date. The roadmap automatically calculates your specific timeline based on your fiscal year-end and current implementation maturity. Most organizations starting now will require an accelerated 12-14 month implementation approach.
                   </p>
-                  <p className="text-xs text-muted-foreground mt-1 italic">
-                    Earlier starts (Q1 2025) = 24-month track | Mid-2025 = 18-month track | Late 2025 = 12-month accelerated
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 bg-amber-50 dark:bg-amber-950/20 rounded-lg border-2 border-amber-500/50">
+                <span className="text-2xl">⚠️</span>
+                <div className="flex-1">
+                  <h3 className="font-semibold mb-1 text-amber-900 dark:text-amber-200">Timeline Reality Check</h3>
+                  <p className="text-sm text-amber-800 dark:text-amber-300">
+                    Organizations starting in Q4 2025 are significantly behind the recommended 24-month implementation timeline. Success will require compressed phases, executive commitment to rapid decision-making, and potentially higher resource investment. See the Roadmap page for your scenario-specific timeline.
                   </p>
                 </div>
               </div>
@@ -215,7 +221,8 @@ const Home = () => {
               <Button asChild size="lg" className="min-h-[48px]">
                 <NavLink to="/roadmap" className="flex items-center gap-2">
                   <Map className="w-5 h-5" />
-                  Generate My Timeline
+                  View Your Timeline
+                  <ArrowRight className="w-4 h-4" />
                 </NavLink>
               </Button>
             </div>
