@@ -26,6 +26,7 @@ import GettingStarted from "./pages/GettingStarted";
 import Features from "./pages/Features";
 import Finalisation from "./pages/Finalisation";
 import Contact from "./pages/Contact";
+import AnalyticsDashboardPage from "./pages/AnalyticsDashboardPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -50,6 +51,7 @@ const App = () => (
                       <Route path="/features" element={<Features />} />
                       <Route path="/finalisation" element={<Finalisation />} />
                       <Route path="/contact" element={<Contact />} />
+                      <Route path="/analytics-dashboard" element={<AnalyticsDashboardPage />} />
                       <Route path="/roadmap" element={<Roadmap />} />
                       <Route path="/templates" element={<Templates />} />
                       <Route path="/roles" element={<Roles />} />

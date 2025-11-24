@@ -1,8 +1,14 @@
 import { Rocket, TrendingUp, CheckCircle, Check } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { trackJourneySelection } from '@/utils/analytics';
 
 export default function JourneySelector() {
   const navigate = useNavigate();
+
+  const handleJourneyClick = (route: string, journeyType: 'starting' | 'progress' | 'ready') => {
+    trackJourneySelection(journeyType);
+    navigate(route);
+  };
 
   const journeyCards = [
     {
@@ -70,7 +76,7 @@ export default function JourneySelector() {
             return (
               <div
                 key={card.title}
-                onClick={() => navigate(card.route)}
+                onClick={() => handleJourneyClick(card.route, card.title === 'Just Starting' ? 'starting' : card.title === 'In Progress' ? 'progress' : 'ready')}
                 className={`
                   h-full bg-white rounded-xl p-6 sm:p-8 border-2 ${card.borderColor} ${card.hoverBorder}
                   cursor-pointer transition-all duration-300 ease-in-out
@@ -112,7 +118,7 @@ export default function JourneySelector() {
                   `}
                   onClick={(e) => {
                     e.stopPropagation();
-                    navigate(card.route);
+                    handleJourneyClick(card.route, card.title === 'Just Starting' ? 'starting' : card.title === 'In Progress' ? 'progress' : 'ready');
                   }}
                 >
                   {card.buttonText}
